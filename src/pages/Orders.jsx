@@ -6,7 +6,6 @@ import CheckoutProduct from '../components/CheckoutProduct/CheckoutProduct';
 function Orders() {
     const location = useLocation();
     const order = location.state;
-
     const formatCurrency = (amount) => {
         return new Intl.NumberFormat('en-IN', {
             style: 'currency',

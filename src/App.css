@@ -1,0 +1,17 @@
+:root {
+    --nav-bg: #131921;
+    --search-bg: #febd69;
+    --button-primary: #febd69;
+    --button-hover: #f3a847;
+    --button-hover: #f3a847;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}

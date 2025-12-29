@@ -1,0 +1,190 @@
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--nav-bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+    padding: 0 10px;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 20px 0 10px;
+    cursor: pointer;
+    padding: 5px 8px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.navbar__logo:hover {
+    border: 1px solid white;
+}
+
+.navbar__logoText {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.navbar__domain {
+    font-size: 14px;
+    align-self: flex-start;
+    margin-top: 2px;
+}
+
+.navbar__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.navbar__search:focus-within {
+    box-shadow: 0 0 0 2px #f90;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.navbar__searchSelect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    border: none;
+    border-right: 1px solid #cdcdcd;
+    height: 100%;
+    padding: 0 5px;
+    color: #555;
+    cursor: pointer;
+    width: 50px;
+}
+
+.navbar__searchInput {
+    height: 100%;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.navbar__searchIcon {
+    padding: 5px;
+    height: 100%;
+    background-color: var(--search-bg);
+    border: none;
+    cursor: pointer;
+    /* width: 45px; Removing fixed width to let icon size + padding dictate, or keep it but ensure centering */
+    width: 45px !important;
+    /* Force width */
+    font-size: 1.5rem !important;
+    /* Increase icon size */
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+    /* Ensure padding is included in height/width */
+    color: black;
+    /* Usually the icon is dark */
+}
+
+.navbar__searchIcon:hover {
+    background-color: var(--button-hover);
+}
+
+.navbar__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar__link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    padding: 5px 9px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.navbar__option:hover {
+    border: 1px solid white;
+}
+
+.navbar__optionLineOne {
+    font-size: 12px;
+}
+
+.navbar__optionLineTwo {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px 9px;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    position: relative;
+}
+
+.navbar__optionBasket:hover {
+    border: 1px solid white;
+}
+
+.navbar__basketCount {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--button-primary);
+}
+
+.navbar__location {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 5px 9px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.navbar__location:hover {
+    border: 1px solid white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+
+    .navbar__location,
+    .navbar__searchSelect {
+        display: none;
+    }
+
+    .navbar__logoText {
+        font-size: 20px;
+    }
+}

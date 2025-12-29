@@ -1,0 +1,72 @@
+.footer {
+    background-color: #232f3e;
+    color: white;
+}
+
+.footer__backToTop {
+    background-color: #37475a;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    color: white;
+    /* Ensure text color is white */
+}
+
+/* Ensure the link wrapper doesn't affect layout/style */
+.footer>a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    /* Make link behave like a block to fill width */
+}
+
+.footer__backToTop:hover {
+    background-color: #485769;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
+.footer__linkArea {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__linkArea>h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer__linkArea>p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #dddddd;
+    cursor: pointer;
+}
+
+.footer__linkArea>p:hover {
+    text-decoration: underline;
+}
+
+.footer__logo {
+    background-color: #232f3e;
+    border-top: 1px solid #3a4553;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer__logoText {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: white;
+}
